@@ -1,0 +1,19 @@
+/* locationDisplayStyles.css */
+
+.display-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 600px) {
+    .display-container {
+      margin: 10px;
+    }
+  }
+  
+  .form-current-location {
+    width: 300px;
+    margin: 0 auto;
+  }
+  

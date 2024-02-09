@@ -1,38 +1,55 @@
+/* App.css */
+
+/* Base styles for all screen sizes */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-box {
+  display: inline-block;
+  padding: 50px;
+  background-color: #444851;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 150px;
+}
+
+.map-container {
+  text-align: center;
+}
+
+.button-box {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.estimate-text {
+  margin-top: 20px;
+}
+
+.span-text {
+  color: red;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .main-box {
+    padding: 20px;
+    margin-top: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .button-box {
+    flex-direction: column;
   }
 }
